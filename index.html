@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="top hidden">
+            <img class="foto" src="img/confetti-10.gif">
+            <h1 class="h1screen"> 💥 CONTAGEM REGRESSIVA 💥</h1>
+            <p id="dateBD"></p>
+            <p class="loading"><img src="img/Eclipse-3s-200px.gif" width="50px" height="50px"></p>
+        </section>
+        
+        <div id="lock">
+            <section class=" mid hidden">
+                <h1 class="h1screen"> ❤💕 FELIZ ANIVERSÁRIO ❤💕</h1>
+                <p class="pscreen">ALICE</p>
+                <img class="screenimg" src="img/rapibird.gif" alt="">
+                <img id="imagen1" class="screenimg animation-and-style" src="img/images (1).jpg" alt="">
+                <img id="imagen2" class="screenimg animation-and-style" src="img/transferir (1).jpg" alt="">
+            </section>
+            
+            <section class="fotmid hidden">
+                <h1> Textinho </h1>
+                <p class="pscreen">
+                    Muito obrigado por cada momento que passamos juntos nesses anos todos
+                    saiba que você é muito especial para mim e eu te AMO muito 💕 pode contar
+                    comigo para qualquer coisa e se em algum momento eu te magoei perdão, prometo 
+                    não matar a ametista no RPG <br>
+                    Obrigado por tudo</p>
+                    <img class="screenimg animation-and-style" src="img/9558504_9426f.gif" alt="">
+            </section>
+             <section class="lastlast hidden">
+                <div class="container">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img class="slide-img1" src="img/34ca76d27c2f6923d9e17868644b18bb.gif" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/9558504_9426f.gif" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/transferir.jpg" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/images (1).jpg" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/rapibird.gif" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/Water-drops-glass-backlight_1920.webp" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/20220812_212940.jpg" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/20220812_213214.jpg" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/images2123.jpg" alt=""></li>
+                                <li class="glide__slide"><img class="slide-img1" src="img/WhatsApp Image 2022-12-17 at 17.15.26 (1).jpeg" alt=""></li>
+                                
+                            </ul>
+                        </div>
+              
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="last hidden">
+                <h1> De su Loba</h1>
+                <p>Auuuuuuuuu</p>
+            </section>
+    </div>
+    </main>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    const config = {
+        
+        type: "carousel",
+        perView: 1,
+        autoplay: 10000,
+        breakpoints: {
+
+            800:{
+                perView: 1
+            }
+        }
+    }
+
+    new Glide('.glide', config).mount()
+</script>
+</body>
+</html>

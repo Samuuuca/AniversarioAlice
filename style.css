@@ -1,0 +1,178 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #404040;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d6d6d6;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
+body{
+    margin: 0;
+    padding: 0;
+}
+#dateBD{
+    font-size: 30px;
+}
+.top{
+    
+    background: rgb(137,14,238);
+    background: linear-gradient(0deg, rgba(137,14,238,1) 0%, rgba(55,18,94,1) 100%);
+}
+.foto{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    animation: confete 2s ;
+    display: none;
+}
+@keyframes confete {
+    0%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    
+}
+
+.h1screen{
+    font-size: 70px;
+    position: relative;
+}
+.h1screen:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+}
+.pscreen{
+    font-size: 20px;
+    text-align: center;
+}
+.mid{
+    background: rgb(228,0,31);
+    background: linear-gradient(0deg, rgba(228,0,31,1) 0%, rgba(137,14,238,1) 100%);
+    color: rgb(255, 255, 255);
+}
+
+#imagen1{
+    position: absolute;
+    right: 10px;
+    animation: uauuu 5s infinite ;
+    
+}
+.animation-and-style{
+    
+    box-shadow: 30px 30px 30px royalblue;
+}
+#imagen2{
+    position: absolute;
+    left: 10px;
+    animation: uauuu 5s infinite ;
+}
+@keyframes uauuu {
+    0%{
+        transform: translateY(-60%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+            transform: translateY(-60%);
+    }
+}
+.fotmid{
+    background: rgb(247,165,84);
+    background: linear-gradient(0deg, rgba(247,165,84,1) 0%, rgba(228,0,31,1) 100%);
+}
+.last{
+    color: rgb(0, 255, 115);
+    font-size: 50px;
+    background-image: url(img/lobo.jpg)
+}
+.container{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 886px;
+    height: 396px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.slide-img1{
+    width: 886px;
+    height: 396px;
+}
+section{
+    
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 105vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+#lock{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 20px;
+    }
+    .foto{
+        width: auto;
+    }
+    .h1screen{
+        font-size: 20px;
+    }
+    .pscreen{
+        
+        text-align: center;
+        font-size: 12px;
+    }
+    
+    .screenimg{
+
+        width: 100px;
+        height: 100px;
+    }
+    #imagen1{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        animation: uauuu 5s infinite ;
+    }
+    #imagen2{
+        position: absolute;
+        left: 10px;
+        top: 5px;
+        animation: uauuu 5s 2s infinite ;
+    }
+}
